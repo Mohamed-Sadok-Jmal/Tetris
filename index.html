@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<!-- main -->
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<!-- Title-->
+	<title>Tetris</title>
+</head>
+
+<body>
+	<!-- begin container -->
+	<div class="container no-margin">
+		<!-- begin row -->
+		<div class="row no-margin">
+			<!-- begin col-sm-2 -->
+			<div class="col-sm-2 no-margin" id="score">
+				<p>Score: <span id="lines">0</span></p>
+				<button class="btn btn-info" id="play">Jouer</button>
+			</div>
+			<!-- end col-sm-2 -->
+			<!-- begin col-sm-4 -->
+			<div class="col-sm-4 no-margin">
+				<!-- canvas -->
+				<canvas id="game" width="300" height="600"></canvas>
+			</div>
+			<!-- end col-sm-4 -->
+			<!-- begin col-sm-2 -->
+			<div class="col-sm-2 no-margin">
+				<!-- canvas -->
+				<canvas id="nextPiece" width="128" height="128"></canvas>
+			</div>
+			<!-- end col-sm-2 -->
+			<!-- begin col-sm-4 -->
+			<div class="col-sm-4 no-margin">
+				<!-- begin help -->
+				<p class="help">HELP?</p>
+				<p class="description">
+					<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+					<span class="title">Flèche vers le haut : </span>
+					<span>Renverser la pièce</span>
+				</p>
+				<p class="description">
+					<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+					<span class="title">Flèche vers le bas : </span>
+					<span>Un peu de vitesse</span>
+				</p>
+				<p class="description">
+					<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+					<span class="title">Flèche gauche : </span>
+					<span>Se déplacer à gauche</span>
+				</p>
+				<p class="description">
+					<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+					<span class="title">Flèche droite : </span>
+					<span>Se déplacer à droite</span>
+				</p>
+				<p id="tryAgain" class="text-info"></p>
+				<!-- end help -->
+			</div>
+			<!-- end col-sm-4 -->
+		</div>
+		<!-- end row -->
+	</div>
+	<!-- end container -->
+
+	<!-- Scripts -->
+	<!-- La classe js piece -->
+	<script type="text/javascript" src="js/piece.js"></script>
+	<!-- le jeu -->
+	<script type="text/javascript" src="js/game.js"></script>
+
+</body>
+
+</html>
